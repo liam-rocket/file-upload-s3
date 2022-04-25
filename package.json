@@ -5,9 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "hello": "echo 'hello thomas'",
-    "push": "git push main"
+    "push": "git push main",
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "keywords": [],
   "author": "",
