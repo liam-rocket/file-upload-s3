@@ -6,6 +6,8 @@ import path from 'path';
 import dotenv from 'dotenv';
 import pool from './initPool.js';
 
+const PORT = process.env.PORT || 3004;
+
 const envFilePath = '.env';
 dotenv.config({ path: path.normalize(envFilePath) });
 
@@ -103,4 +105,4 @@ app.get('/recipe/:id', async (request, response) => {
   response.render('recipe', data);
 });
 
-app.listen(3004);
+app.listen(PORT);
